@@ -1,0 +1,15 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "docker-compose -f ./config/docker/docker-compose.yml up --build",
+    "test": "yarn test"
+  },
+  "author": "Tomasz Przytula",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
