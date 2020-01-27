@@ -1,19 +1,19 @@
 version: '3'
 
 services:
-  nats:
-    image: nats
-    ports:
-      - "8222:8222"
   web:
     build:
         context: ./services/web/
         dockerfile: ./config/docker/Dockerfile
     ports:
-        - "3000:3000"
+        - "7000:3000"
   backend:
     build:
         context: ./services/backend/
         dockerfile: ./config/docker/Dockerfile
     ports:
-        - "4000:4000"
+        - "7100:4000"
+  nats:
+    image: nats
+    ports:
+      - "7200:8222"
