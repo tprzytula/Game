@@ -1,6 +1,11 @@
 version: '3'
 
 services:
+  nats:
+    image: nats
+    ports:
+      - "8222:8222"
+      - "4222:4222"
   web:
     build:
         context: ./services/web/
