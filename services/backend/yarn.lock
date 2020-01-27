@@ -240,10 +240,23 @@ ms@2.1.1:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.1.tgz#30a5864eb3ebb0a66f2ebe6d727af06a09d86e0a"
   integrity sha512-tgp+dl5cGk28utYktBsrFqA7HKgrhgPsg6Z/EfhWI4gl1Hwq8B/GmY/0oXZ6nF8hDVesS/FpnYaD/kOWhYQvyg==
 
+nats@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/nats/-/nats-1.4.0.tgz#c6c5a1ab5ec0bec11c18038257d79e005b243fe1"
+  integrity sha512-dsXZnBN6gFcgIcPLXF72LMaA8cC2edz8J01qRfR7uB4r77DJHaLGYwYsV47/KaUojuavk0agYwxkWbe2J5cGLQ==
+  dependencies:
+    nuid "^1.0.0"
+    ts-nkeys "^1.0.8"
+
 negotiator@0.6.2:
   version "0.6.2"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.2.tgz#feacf7ccf525a77ae9634436a64883ffeca346fb"
   integrity sha512-hZXc7K2e+PgeI1eDBe/10Ard4ekbfrrqG8Ep+8Jmf4JID2bNg7NvCPOZN+kfF574pFQI7mum2AUqDidoKqcTOw==
+
+nuid@^1.0.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/nuid/-/nuid-1.1.0.tgz#e0c5746350a25562f58283197f34c50861f44675"
+  integrity sha512-C/JdZ6PtCqKsCEs4ni76nhBsdmuQgLAT/CTLNprkcLViDAnkk7qx5sSA8PVC2vmSsdBlSsFuGb52v6pwn1oaeg==
 
 on-finished@~2.3.0:
   version "2.3.0"
@@ -343,6 +356,18 @@ toidentifier@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/toidentifier/-/toidentifier-1.0.0.tgz#7e1be3470f1e77948bc43d94a3c8f4d7752ba553"
   integrity sha512-yaOH/Pk/VEhBWWTlhI+qXxDFXlejDGcQipMlyxda9nthulaxLZUNcUqFxokp0vcYnvteJln5FNQDRrxj3YcbVw==
+
+ts-nkeys@^1.0.8:
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/ts-nkeys/-/ts-nkeys-1.0.14.tgz#3d4b61b6aa4fa952c649ecfafacdce1a4831ba57"
+  integrity sha512-WIPykDjpnOvVn5zDNv1uu6o1+Uj+CXaQOM4Od6k2SRiUF4rmhjk7nAHC0mGrWjj0GxeQnwKQv++65qtm1O6kiA==
+  dependencies:
+    tweetnacl "^1.0.1"
+
+tweetnacl@^1.0.1:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-1.0.2.tgz#39fba8d1f7a34706a3fc1fd8c04afcad7bb9e689"
+  integrity sha512-+8aPRjmXgf1VqvyxSlBUzKzeYqVS9Ai8vZ28g+mL7dNQl1jlUTCMDZnvNQdAS1xTywMkIXwJsfipsR/6s2+syw==
 
 type-is@~1.6.17, type-is@~1.6.18:
   version "1.6.18"
