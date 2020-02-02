@@ -1,3 +1,4 @@
+const MongoClient = require('mongodb').MongoClient;
 const express = require('express');
 const app = express();
 
@@ -27,3 +28,18 @@ app.get('/', (req, res) => {
 });
 
 app.listen(4000, () => console.log('App listening on port 4000'));
+
+// Connection URL
+const url = 'mongodb://mongo:27017';
+ 
+// Use connect method to connect to the server
+MongoClient.connect(url, function(error, client) {
+  if (error) {
+    console.error('Could not connect to the database', error);
+    return;
+  }
+
+
+  console.log("Connected successfully to database");
+  client.close();
+});

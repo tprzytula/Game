@@ -13,13 +13,14 @@ services:
         dockerfile: ./config/docker/Dockerfile
     ports:
         - "7100:4000"
+    depends_on: 
+      - mongo
+      - nats
   nats:
     image: nats
     ports:
       - "7200:8222"
-  database:
+  mongo:
     image: mongo
-    environment: 
-      - MONGO_INITDB_DATABASE=game-database
     ports:
-      - '27017-27019:27017-27019'
+      - '27017:27017'

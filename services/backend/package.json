@@ -11,6 +11,7 @@
   "license": "GPLv2",
   "dependencies": {
     "express": "^4.17.1",
+    "mongodb": "^3.5.2",
     "nats": "^1.4.0"
   }
 }
