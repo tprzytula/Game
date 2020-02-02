@@ -17,3 +17,9 @@ services:
     image: nats
     ports:
       - "7200:8222"
+  database:
+    image: mongo
+    environment: 
+      - MONGO_INITDB_DATABASE=game-database
+    ports:
+      - '27017-27019:27017-27019'
