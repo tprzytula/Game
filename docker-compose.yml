@@ -13,6 +13,7 @@ services:
         dockerfile: ./config/docker/Dockerfile
     ports:
         - "7100:4000"
+        - "7150:7150"
     depends_on: 
       - mongo
       - nats
