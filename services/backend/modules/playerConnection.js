@@ -13,4 +13,4 @@ class PlayerConnection {
     }
 }
 
-module.exports.PlayerConnection = PlayerConnection;
+module.exports.default = PlayerConnection;

@@ -1,5 +1,5 @@
 const WebSocket = require('ws');
-const { PlayerConnection } = require('./playerConnection');
+const PlayerConnection = require('./playerConnection');
 
 class WebsocketServer {
     constructor(messageBus) {
